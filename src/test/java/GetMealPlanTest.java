@@ -8,6 +8,10 @@ public class GetMealPlanTest extends BaseTest {
     @Test(description = "Test ShoppingList")
     public void testComplexSearch() {
         given()
+            // For OAuth
+            //.auth().oauth2("access_token")
+            //For Basic Authentication
+            // .auth().basic("username", "password")
         .queryParam("apiKey", "1065eecace0f45d9abfa481db565817b")
         .queryParam("hash", "e43e22e2600cbd495d80d260a765068af209b256")
         .log().ifValidationFails()
